@@ -39,13 +39,14 @@ const services = [
     external: false,
     image: "/images/YLP-TOP-e1738318572296.jpg",
   },
-  {
-    title: "外国人投資家とのコミュニケーション改善研修",
-    description: "グローバルな場面で求められる、投資家向けコミュニケーション力を強化します。",
-    href: "https://lp.zephyros.jp/eebc",
-    external: true,
-    image: "/images/pexels-photo-1533720-1533720.jpg",
-  },
+  // TODO: ページ完成後に再表示
+  // {
+  //   title: "外国人投資家とのコミュニケーション改善研修",
+  //   description: "グローバルな場面で求められる、投資家向けコミュニケーション力を強化します。",
+  //   href: "https://lp.zephyros.jp/eebc",
+  //   external: true,
+  //   image: "/images/pexels-photo-1533720-1533720.jpg",
+  // },
 ];
 
 export default async function Home() {
