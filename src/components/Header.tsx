@@ -25,7 +25,7 @@ export default function Header() {
             alt="ZEPHYROS INC."
             width={60}
             height={30}
-            className="object-contain"
+            className="object-contain w-10 md:w-[60px]"
           />
           <span className="text-sm font-medium text-gray-700">グローバル・コミュニケーションのゼフロス</span>
         </Link>

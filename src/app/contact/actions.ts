@@ -27,7 +27,7 @@ ${message}
 `.trim();
 
   const { error } = await resend.emails.send({
-    from: "onboarding@resend.dev",
+    from: "ZEPHYROS <website@languagehouse.jp>",
     to: "website@languagehouse.jp",
     subject: `[お問い合わせ] ${type} - ${name}様`,
     text: body,
