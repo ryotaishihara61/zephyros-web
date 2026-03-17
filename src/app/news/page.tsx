@@ -2,6 +2,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { getNewsList } from "@/lib/microcms";
 
+export const runtime = "edge";
+
 export const metadata = {
   title: "最新情報",
   description: "ZEPHYROSの最新ニュース・お知らせ一覧です。",
