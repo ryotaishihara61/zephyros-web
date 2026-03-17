@@ -15,24 +15,31 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const defaultTitle = "ZEPHYROS | グローバルリーダーシップ・ビジネス英語研修";
+const defaultDescription = "41万人の実績。世界と戦うリーダーを育成する実践型グローバル研修プログラム。";
+
 export const metadata: Metadata = {
   title: {
-    default: "ZEPHYROS | 50年の実績、世界を動かすグローバル研修",
+    default: defaultTitle,
     template: "%s | ZEPHYROS",
   },
-  description:
-    "創業50年、受講者累計41万人。単なる英語教育ではなく、文化の壁を越え人を動かすためのグローバル・コミュニケーションとリーダーシップを教える ZEPHYROS。トヨタ、アマゾンなど世界の大手企業に選ばれる研修プロフェッショナルです。",
+  description: defaultDescription,
   icons: {
     icon: "/icon.png",
     apple: "/icon.png",
   },
   openGraph: {
+    title: defaultTitle,
+    description: defaultDescription,
+    url: "https://zephyros.jp",
     siteName: "ZEPHYROS",
-    type: "website",
     locale: "ja_JP",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
+    title: defaultTitle,
+    description: defaultDescription,
   },
 };
 
