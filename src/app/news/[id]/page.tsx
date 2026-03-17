@@ -1,4 +1,4 @@
-import { getNewsDetail, getNewsList } from "@/lib/microcms";
+import { getNewsDetail } from "@/lib/microcms";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -37,10 +37,6 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   };
 }
 
-export async function generateStaticParams() {
-  const { contents } = await getNewsList(100);
-  return contents.map((article) => ({ id: article.id }));
-}
 
 export default async function NewsDetailPage({ params }: Props) {
   const { id } = await params;
