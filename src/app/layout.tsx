@@ -21,6 +21,10 @@ export const metadata: Metadata = {
   },
   description:
     "創業50年、受講者累計41万人。単なる英語教育ではなく、文化の壁を越え人を動かすためのグローバル・コミュニケーションとリーダーシップを教える ZEPHYROS。トヨタ、アマゾンなど世界の大手企業に選ばれる研修プロフェッショナルです。",
+  icons: {
+    icon: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     siteName: "ZEPHYROS",
     type: "website",
