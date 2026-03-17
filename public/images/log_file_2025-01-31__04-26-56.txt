@@ -1,0 +1,29 @@
+
+---Upload files---
+Content file was not uploaded. Error: No file provided.
+
+---Upload files---
+Widget file was not uploaded. Error: No file provided.
+
+---Upload files---
+Redux file was not uploaded. Error: No file provided.
+
+---Upload files---
+The import files were successfully uploaded!
+Initial max execution time = 120
+Files info:
+Site URL = https://zephyros.jp
+Data file = not defined!
+Widget file = not defined!
+Customizer file = /home/users/0/main.jp-zephyros/web/wp-content/uploads/2025/01/swell_demo03.dat
+Redux files:
+not defined!
+
+---ocdi/before_content_import---
+
+
+---Importing customizer settings---
+Customizer settings import finished!
+
+---ocdi/after_import---
+
