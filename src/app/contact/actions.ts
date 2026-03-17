@@ -1,5 +1,7 @@
 "use server";
 
+export const runtime = "edge";
+
 import { Resend } from "resend";
 import { redirect } from "next/navigation";
 
@@ -26,14 +28,18 @@ export async function sendContact(_: unknown, formData: FormData) {
 ${message}
 `.trim();
 
-  const { error } = await resend.emails.send({
-    from: "ZEPHYROS <website@languagehouse.jp>",
-    to: "website@languagehouse.jp",
-    subject: `[お問い合わせ] ${type} - ${name}様`,
-    text: body,
-  });
+  try {
+    const { error } = await resend.emails.send({
+      from: "ZEPHYROS <website@languagehouse.jp>",
+      to: "website@languagehouse.jp",
+      subject: `[お問い合わせ] ${type} - ${name}様`,
+      text: body,
+    });
 
-  if (error) {
+    if (error) {
+      return { error: "送信に失敗しました。しばらく経ってから再度お試しください。" };
+    }
+  } catch {
     return { error: "送信に失敗しました。しばらく経ってから再度お試しください。" };
   }
 

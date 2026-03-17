@@ -1,5 +1,7 @@
 import ContactForm from "./ContactForm";
 
+export const runtime = "edge";
+
 export const metadata = {
   title: "お問い合わせ",
   description: "ZEPHYROSへのご相談・お問い合わせはこちらから。研修・サービスに関するご質問をお気軽にどうぞ。",
