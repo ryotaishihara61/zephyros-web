@@ -89,10 +89,10 @@ export default function HeroSection() {
             initial={{ opacity: 0, y: 24 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, delay: 0.4 }}
-            className="mt-16 grid grid-cols-3 divide-x divide-white/10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm"
+            className="mt-16 grid grid-cols-1 divide-y divide-white/10 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm sm:grid-cols-3 sm:divide-x sm:divide-y-0"
           >
             {stats.map((stat) => (
-              <div key={stat.label} className="px-6 py-8">
+              <div key={stat.label} className="px-6 py-6 text-center sm:py-8 sm:text-left">
                 <p className="text-3xl font-bold text-amber-400 sm:text-4xl lg:text-5xl">
                   <CountUp target={stat.value} suffix={stat.suffix} format={stat.format} />
                 </p>
