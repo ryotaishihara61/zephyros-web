@@ -1,6 +1,6 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { BookOpen, Tent, MessageCircle, CheckSquare } from "lucide-react";
 
 type ItemType = "Lecture" | "Activity" | "Feedback" | "Wrap-up";
@@ -132,12 +132,12 @@ const typeConfig: Record<ItemType, { label: string; icon: React.ReactNode; badge
   },
 };
 
-const containerVariants = {
+const containerVariants: Variants = {
   hidden: {},
   visible: { transition: { staggerChildren: 0.15 } },
 };
 
-const cardVariants = {
+const cardVariants: Variants = {
   hidden: { opacity: 0, y: 24 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.5, ease: "easeOut" } },
 };
