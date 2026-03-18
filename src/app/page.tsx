@@ -50,7 +50,7 @@ const services = [
 ];
 
 export default async function Home() {
-  const latestNews = await getNewsList(3).then((r) => r.contents).catch(() => []);
+  const latestNews = await getNewsList(4).then((r) => r.contents).catch(() => []);
 
   return (
     <main>
@@ -80,7 +80,7 @@ export default async function Home() {
           {latestNews.length === 0 ? (
             <p className="text-gray-500">ニュースはまだありません。</p>
           ) : (
-            <div className="grid gap-6 sm:grid-cols-3">
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {latestNews.map((article) => (
                 <Link
                   key={article.id}
