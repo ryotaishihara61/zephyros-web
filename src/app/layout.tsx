@@ -35,11 +35,13 @@ export const metadata: Metadata = {
     siteName: "ZEPHYROS",
     locale: "ja_JP",
     type: "website",
+    images: [{ url: "https://zephyros.jp/images/ogp.png", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: defaultTitle,
     description: defaultDescription,
+    images: ["https://zephyros.jp/images/ogp.png"],
   },
 };
 
