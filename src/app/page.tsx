@@ -21,7 +21,7 @@ const services = [
   {
     title: "ビジネス英語研修",
     description: "実践的なビジネス英語を習得し、国際的な業務をスムーズに進めるスキルを養います。",
-    href: "https://www.languagehouse.jp/ja/",
+    href: "https://languagehouse.jp/ja/",
     external: true,
     image: "/images/AdobeStock_306467498-scaled.jpeg",
   },
