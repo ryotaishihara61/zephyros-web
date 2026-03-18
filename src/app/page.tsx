@@ -15,7 +15,7 @@ export const metadata = {
   },
 };
 
-export const revalidate = 60;
+export const runtime = "edge";
 
 const services = [
   {
